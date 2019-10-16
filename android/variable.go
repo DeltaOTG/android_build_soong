@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"lineage/soong/android"
+	"deltaotg/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
 		// include Lineage variables
-		Lineage android.Product_variables
+		Deltaotg android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -174,7 +174,7 @@ type productVariables struct {
 	DeviceKernelHeaders []string `json:",omitempty"`
 
 	// include Lineage variables
-	Lineage android.ProductVariables
+	Deltaotg android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
